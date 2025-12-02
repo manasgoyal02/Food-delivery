@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin Login - Tasty Bites</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-login">
+  <header>
+    <a href="index.html" class="logo"><i class="fas fa-utensils"></i>food</a>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <a href="index.html">home</a>
+      <a href="speciality.html">our's special</a>
+      <a href="popular.html">popular foods</a>
+      <a href="gallery.html">gallery</a>
+      <a href="review.html">customer reviews</a>
+      <a href="admin-login.html">admin</a>
+      <a href="order.html"><button class="btn0">Order Now</button></a>
+    </nav>
+  </header>
+
+  <section class="order" style="padding-top:8rem;">
+    <h1 class="heading">Admin <span>Login</span></h1>
+    <div class="row">
+      <form id="admin-login-form">
+        <div class="inputBox">
+          <input id="admin-username" name="username" type="text" placeholder="Username" required>
+          <input id="admin-password" name="password" type="password" placeholder="Password" required>
+        </div>
+        <div style="text-align:center;">
+          <button type="submit" class="btn0">Sign in</button>
+          <p style="margin-top:.75rem;color:#666;font-size:1.4rem;">Credentials: <strong>admin / admin4</strong></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="admin.js"></script>
+</body>
+</html>

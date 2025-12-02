@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin - Orders</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header style="position:static;box-shadow:none;padding:1rem 4%;">
+    <a href="index.html" class="logo"><i class="fas fa-utensils"></i>food</a>
+    <div style="float:right;">
+      <button id="admin-logout" class="btn0">Logout</button>
+      <button id="clear-all" class="btn0" style="margin-left:.5rem;background:#fff;color:var(--red);border-color:var(--red);">Clear All</button>
+    </div>
+  </header>
+
+  <section style="padding:2rem 6%;">
+    <h2 class="heading">Saved <span>Orders</span></h2>
+    <div id="admin-container" style="background:#fff;padding:1.2rem;border-radius:.5rem;box-shadow:0 .4rem 1rem rgba(0,0,0,.06);">
+      <table id="orders-table" style="width:100%;border-collapse:collapse;">
+        <thead>
+          <tr>
+            <th style="text-align:left;padding:.6rem;border-bottom:1px solid #eee;">Order ID</th>
+            <th style="text-align:left;padding:.6rem;border-bottom:1px solid #eee;">Name</th>
+            <th style="text-align:left;padding:.6rem;border-bottom:1px solid #eee;">Email</th>
+            <th style="text-align:left;padding:.6rem;border-bottom:1px solid #eee;">Phone</th>
+            <th style="text-align:left;padding:.6rem;border-bottom:1px solid #eee;">Food</th>
+            <th style="text-align:left;padding:.6rem;border-bottom:1px solid #eee;">Address</th>
+            <th style="text-align:left;padding:.6rem;border-bottom:1px solid #eee;">Created</th>
+            <th style="text-align:left;padding:.6rem;border-bottom:1px solid #eee;">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="orders-body"></tbody>
+      </table>
+      <p id="no-orders" style="color:#666;padding:1rem;display:none;">No orders found.</p>
+    </div>
+  </section>
+
+  <script src="admin.js"></script>
+</body>
+</html>
